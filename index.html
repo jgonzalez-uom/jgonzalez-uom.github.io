@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Analytical Study on the Visibility of Potential Positions for External Human-Machine Interfaces</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,22 +56,22 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Jose Gonzalez-Belmonte</a><sup></sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jaerock Kwon</a><sup></sup>,</span>
+                  <!--<span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  </span>-->
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">University of Michigan - Dearborn</span>
+                    <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                      <!-- Arxiv PDF link -->
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -124,12 +124,12 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!--<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">-->
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+<!--        <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -137,7 +137,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section>-->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +148,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            As we move towards a future of autonomous vehicles, questions regarding their method of communication have arisen. One of the common questions concerns the placement of the signaling used to communicate with pedestrians and road users, but little work has been published fully dedicated to exploring this. This paper uses a simulation made in the Unity game engine to record the visibility of fifteen different vehicles, specifically regarding the visibility of frontal elements by a pedestrian on the sidewalk. Variables include the vehicle position, number of vehicles on the road, and minimum and maximum distance of the recorded points. It was concluded that the areas of the vehicle most often seen by pedestrians on the sidewalk attempting to cross the road were the frontal frontal fenders and the headlights, with the frontal wheels, frontal doors, bumper, and side mirrors are less visible alternatives. These findings are valuable in the future design of signaling for autonomous vehicles, in order to ensure pedestrians are able to see them on approaching vehicles. The software used provides a platform for similar works in the future to be conducted.
           </p>
         </div>
       </div>
@@ -165,32 +165,68 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/running_sample.png" alt="Figure 2"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Screenshot of the simulation running. Red lines indicate the trajectory of the ray-casts that have hit the Target Vehicle.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/VehicleComparison.png" alt="Figure 3"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Top-Down View of the fifteen vehicles used in the simulations. Color denotes the category of each vehicle: (a) Small (b) Medium (c) Large (d) Extra Large
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/VehiclePositionsAndCameraPositions.png" alt="Figure 5"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Diagram illustrating all sixteen setups based on the Target and Filler Vehicle available positions (green arrows in (a) to (p)), exclusive Filler Vehicle available positions (blue arrows in (a) to (o)), vehicle type ((a) to (d) for Small, (e) to (h) for Medium, (i) to (l) for Large, (m) to (p) for Extra Large) , Camera Positions ((a to p)(A to J)), and Camera Directions (Marked in purple).
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/RangeVisualization.png" alt="Figure 6"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Visualization of the three ranges used for Data Capturing for this experiment: Blue: 0m to 5m; Cyan: 5m to 25m; Green: 25m to 75m.
       </h2>
     </div>
+    <div class="item">
+     <!-- Your image here -->
+     <img src="static/images/VehicleDiagram.png.png" alt="Figure 6"/>
+     <h2 class="subtitle has-text-centered">
+      llustration of the different exterior parts of a sedan, and the terminology used to refer to each
+     </h2>
+   </div>
+   <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/RangeVisualization.png" alt="Figure 7"/>
+    <h2 class="subtitle has-text-centered">
+      Visualization of the three ranges used for Data Capturing for this experiment: Blue: 0m to 5m; Cyan: 5m to 25m; Green: 25m to 75m.
+    </h2>
+  </div>
+  <div class="item">
+   <!-- Your image here -->
+   <img src="static/images/SideComparison.png" alt="Figure 8"/>
+   <h2 class="subtitle has-text-centered">
+     Comparison of the right side of the heatmap of all vehicle types that is produced when these are driving North.
+    (a) Motorcycle (b) Smart Car (c) Carryall Car (d) Sedan (e) SUV (f) Panel Van (g) Topless Convertible (h) Station Wagon (i) Four Wheel Truck (j) Minibus (k) Pickup Truck (l) Moving Truck (m) Motor Home (n) Double Decker Bus (o) Single Decker Bus
+   </h2>
+ </div>
+ <div class="item">
+  <!-- Your image here -->
+  <img src="static/images/Four_Facing.png" alt="Figure 9"/>
+  <h2 class="subtitle has-text-centered">
+    Results showing how many times a Grid Point was recorded, across all scenarios where the vehicle was a SUV driving: (a) North, on the right side of the virtual environment; (b) East, out of the alleyway on the left side of the virtual environment; (c) South, on the left side of the virtual environment; (d) West, out of the alleyway on the right side of the virtual environment.
+  </h2>
+</div>
+<div class="item">
+ <!-- Your image here -->
+ <img src="static/images/DistanceComparison.png" alt="Figure 10"/>
+ <h2 class="subtitle has-text-centered">
+  Results showing the heatmap of the SUV at each facing direction, when the observer is at each distance threshold. (a,d,g,j) 0m to 5m; (b,e,h,k) 5m to 25m; (c,f,i,l) 25m to 75m.
+ </h2>
+</div>
   </div>
 </div>
 </div>
@@ -201,50 +237,50 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!--<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+    --><!-- Paper video. -->
+<!--      <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          --><!-- Youtube embed code here -->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section>-->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!--<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+          -->            <!-- Your video file here -->
+<!--            <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+          --><!-- Your video file here -->
+<!--            <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+          --><!-- Your video file here -->
+<!--            <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
         </div>
@@ -252,7 +288,7 @@
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+--><!-- End video carousel -->
 
 
 
