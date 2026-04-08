@@ -73,19 +73,19 @@
                   <div class="column has-text-centered">
                     <div class="publication-links">
                       <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="UPDATE THIS" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
                         <span>Paper</span>
-                      </a>
-                    </span>
+                        </a>
+                      </span> -->
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/UPDATE THIS" target="_blank"
+                      <a href="static/pdfs/Using_Unwrapped_Full_Color_Space_Palette_Recording_to_Measure_Exposedness_of_a_Vehicle_Exterior_Parts_for_External_Human_Machine_Interfaces.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -95,7 +95,7 @@
                   </span>
 
                     <!-- Pictures link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/images/UPDATE THIS" target="_blank"
                       class="button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -103,7 +103,7 @@
                       </span>
                       <span>Result Textures</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Data link -->
                   <span class="link-block">
@@ -118,7 +118,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="UPDATE THIS" target="_blank"
+                    <a href="https://github.com/jgonzalez-uom/paper-exposedness-fcsp" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -162,7 +162,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            THIS SITE IS UNDER CONSTRUCTION
+            One of the concerns with autonomous vehicles is their ability to communicate their intent to other road users, specially pedestriands, in order to prevent accidents. External Human-Machine Interfaces (eHMIs) are the proposed solution to this issue, through the introduction of electronic devices on the exterior of a vehicle that communicate when the vehicle is planning on slowing down or yielding. This paper uses the technique of unwrapping the faces of a mesh onto a texture where every pixel is a unique color, as well as a series of animated simulations made and ran in the Unity game engine, to measure how many times is each point on a 2015 Ford F-150 King Ranch is unobstructed to a pedestrian attempting to cross the road at a four-way intersection. By cross-referencing the results with a color-coded map of the labeled parts on the exterior of the vehicle, it was concluded that while the bumper, grill, and hood were the parts of the vehicle visible to the crossing pedestrian most often, the existence of other vehicles on the same lane that might obstruct the view of these elements points to the windshield and frontal fenders as the optimal placement for eHMIs.
           </p>
         </div>
       </div>
@@ -176,45 +176,147 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel" data-interval="10000" data-pause="hover">
-       <div class="item">
+      <div id="results-carousel"  style="height: 800px; width: 800px; margin:0 auto; " class="carousel results-carousel" data-interval="10000" data-pause="hover"  >
+      <div class="item">
         <!-- Your image here -->
-        <img src="static/images/UPDATE THIS" alt="Figure 2"/>
+        <img src="static/images/COMPRESSED_unique_color_body.png" alt="Figure 2"/>
         <h2 class="subtitle has-text-centered">
-          UPDATE THIS
+          A rendition of Full Color Space Palette (FCSP) generated for this study, compressed for formatting purposes. Each pixel is a unique not present anywhere else in the image.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/UPDATE THIS" alt="Figure 1"/>
+        <img src="static/images/F150 UVs.png" alt="Figure 3"/>
         <h2 class="subtitle has-text-centered">
-          UPDATE THIS
+          Faces of the F-150 King Ranch mesh unwrapped onto the FCSP
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/UPDATE THIS" alt="Figure 4"/>
+        <img src="static/images/FCSPTextured.png" alt="Figure 4"/>
         <h2 class="subtitle has-text-centered">
-          UPDATE THIS
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/UPDATE THIS" alt="Figure 8"/>
-        <h2 class="subtitle has-text-centered">
-          UPDATE THIS
+          The vehicle model in the 3D engine with the FCSP assigned as its texture.
        </h2>
      </div>
-   <div class="item">
+  <div class="item">
     <!-- Your image here -->
-    <img src="static/images/UPDATE THIS" alt="Figure 7"/>
+    <img src="static/images/PartsMap.png" alt="Figure 8" style="height: 700px; width: 700px; margin:0 auto; "/>
     <h2 class="subtitle has-text-centered">
-      UPDATE THIS
+      Unwrapped texture of the Ford F-150 King Ranch with each of its exterior elements uniquely colored. Also referred to as the Part Identification Texture (PIdT)
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/ScenarioAFullres.png" style="height: 700px; width: 700px; margin:0 auto; " alt="Figure 9"/>
+    <h2 class="subtitle has-text-centered">
+      Example of an output plasma gradient texture.
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/APartsResult.PNG" alt="Table II"/>
+    <h2 class="subtitle has-text-centered">
+      Individual vehicle exterior parts that are among the five with the highest total value, average value, or peak value, for Scenario A where the vehicle is coming from the west.
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/BPartsResult.PNG" alt="Table III"/>
+    <h2 class="subtitle has-text-centered">
+      Individual vehicle exterior parts that are among the five with the highest total value, average value, or peak value, for Scenario B where the vehicle is coming from the east.
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/CPartsResult.PNG" alt="Table IV"/>
+    <h2 class="subtitle has-text-centered">
+      Individual vehicle exterior parts that are among the five with the highest total value, average value, or peak value, for Scenario C where the vehicle is coming from the north.
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/DPartsResult.PNG" alt="Table V"/>
+    <h2 class="subtitle has-text-centered">
+      Individual vehicle exterior parts that are among the five with the highest total value, average value, or peak value, for Scenario D where the vehicle is coming from the south.
     </h2>
   </div>
 </div>
 </div>
 </section>
+
+<p style="margin-bottom: 100px;">
+
+
+
+
+</p>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" data-interval="1000000" data-pause="hover"  >
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Layout.png" class="center" alt="Figure 1"/>
+        <h2 class="subtitle has-text-centered">
+          Illustration of the vehicle trajectory at each of the scenarios, as well as the position of the camera (1) and buildings (2). (A) Vehicle approaches from the West; (B) vehicle approaches from the East; (C) vehicle approaches from the North; (D) vehicle approaches from the South. (A-D).i is the vehicle position at the 0:00 timestamp; (A-D).ii is the vehicle position at 1:30; (A-D).iii is the vehicle position at 2:30; (A-D).iv is the vehicle position at 3:00.
+        </h2>
+      </div>
+      
+    <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/Picture of environment (wireframe).PNG" class="center"  alt="Figure 5"/>
+    <h2 class="subtitle has-text-centered">
+      Comparison of the environment geometry (top) with its appearance after the unlit material has been applied to it (bottom)
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/ScreenshotSplitSample.png" class="center"  alt="Figure 6"/>
+    <h2 class="subtitle has-text-centered">
+      Visualization of a 6,420x8,100 image being divided into twenty-five 1,284x1,620 files before capturing and saving.
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/PartLabeling.png" alt="Figure 7"/>
+    <h2 class="subtitle has-text-centered">
+      Exterior elements of F150 King Rach uniquely identified by color. (1) Bumper, (2) Bumper Rear, (3) Central Back Light, (4) Cowl Cover, (5) Front-Left Door Handle, (6) Front-Right Door Handle, (7) Rear-Left Door Handle, (8) Rear-Right Door Handle, (9) Front-Left Door, (10) Front-Right Door, (11) Rear-Left Door, (12) Rear-Right Door, (13) Front-Left Fender, (14) Front-Right Fender, (15) Rear-Left Fender, (16) Rear-Right Fender, (17) Front-Left Tire, (18) Front-Right Tire, (19) Grill, (20) Left Headlight, (21) Right Headlight, (22) Hood, (23) License Plate Area Front, (24) License Plate Area Rear, (25) Low Rear-Left Fender, (26) Low Rear-Right Fender, (27) Lower Reflector Front, (28) Rear-Left Mud Flap, (29) Rear-Right Mud Flap, (30) Front-Left Mud Flap, (31) Front-Right Mud Flap, (32) Rear Panel, (33) Rear-Left Panel Rail, (34) Rear-RightPanel Rail, (35) Rear-Left Rim, (36) Rear-Right Rim, (37) Front-Left Rim, (38) Front-Right Rim, (39) Left Rocker Panel, (40) Right Rocker Panel, (41) Roof, (42) Left Side Mirror, (43) Right Side Mirror, (44) Left Step Bar, (45) Right Step Bar, (46) Tailgate, (47) Left Tail Light, (48) Right Tail Light, (49) Rear-Left Tire, (50) Rear-Right Tire, (51) Trailer Hitch, (52) Truck Bed, (53) Truck Bed Rim, (54) Truck Chest, (55) Rear-Left Wheelhouse, (56) Rear-Right Wheelhouse, (57) Front-Left Wheelhouse, (58) Front-Right Wheelhouse, (59) Rear-Left Wheel Hub, (60) Rear-Right Wheel Hub, (61) Front-Left Window, (62) Front-Right Window, (63) Windshield, (64) Left Windshield Rail, (65) Right Windshield Rail, (66) Rear-Left Window, (67) Rear-Right Window, (68) Others
+    </h2>
+  </div>
+  
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/AResults.png" alt="Figure 10"/>
+    <h2 class="subtitle has-text-centered">
+      Pictures showing the exposedness of the exterior of the vehicle when it approaches a pedestrian from the left, stopping before a crosswalk. (A) Front, (B) Rear, (C) Left side, (D) Right Side, (E) Front-Left Side, (F) Front-Right Side, (G) Back-Left Side, (H) Back-Right Side.
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/BResults.png" alt="Figure 11"/>
+    <h2 class="subtitle has-text-centered">
+      Pictures showing the exposedness of the exterior of the vehicle when it approaches a pedestrian from the right, stopping before a crosswalk. (A) Front, (B) Rear, (C) Left side, (D) Right Side, (E) Front-Left Side, (F) Front-Right Side, (G) Back-Left Side, (H) Back-Right Side.
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/CResults.png" alt="Figure 12"/>
+    <h2 class="subtitle has-text-centered">
+      Pictures showing the exposedness of the exterior of the vehicle approaching a pedestrian from the lane farthest from them and from the south. Fig. X. Pictures showing the exposedness of the exterior of the vehicle when it approaches a pedestrian from the left, stopping before a crosswalk. (A) Front, (B) Rear, (C) Left side, (D) Right Side, (E) Front-Left Side, (F) Front-Right Side, (G) Back-Left Side, (H) Back-Right Side.
+    </h2>
+  </div>
+  <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/DResults.png" alt="Figure 13"/>
+    <h2 class="subtitle has-text-centered">
+      Pictures showing the exposedness of the exterior of the vehicle when it’s approaching a pedestrian from the north, across an intersection. (A) Front, (B) Rear, (C) Left side, (D) Right Side, (E) Front-Left Side, (F) Front-Right Side, (G) Back-Left Side, (H) Back-Right Side.
+    </h2>
+  </div>
+</div>
+</div>
+</section>
+
 <!-- End image carousel -->
 
   <footer class="footer">
